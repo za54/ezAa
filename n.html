@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Meza Dark Castle</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg"></div>
+<div class="dark-overlay"></div>
+<div class="fog"></div>
+<div class="fog2"></div>
+
+<!-- CARD TENGAH -->
+<div class="card">
+    <h1>Meza ⚡</h1>
+    <p>Klik dimana saja kalau musik belum bunyi</p>
+
+    <div>
+        <a href="https://wa.me/62895320911586" class="button">WhatsApp</a>
+        <a href="https://www.instagram.com/ezagatauu?igsh=dnB1OHU3MnUydndv" class="button">Instagram</a>
+    </div>
+</div>
+
+<!-- AUDIO -->
+<audio id="musik" loop>
+    <source src="goldenbrown.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let audio = document.getElementById("musik");
+
+window.onload = () => audio.play();
+document.body.addEventListener("click", () => audio.play());
+</script>
+
+</body>
+</html>
